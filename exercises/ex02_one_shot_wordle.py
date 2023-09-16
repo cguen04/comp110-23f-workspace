@@ -1,5 +1,5 @@
 """Continuing to work towards Wordle."""
-__author__:  str = "730663338"
+__author__: str = "730663338"
 
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
