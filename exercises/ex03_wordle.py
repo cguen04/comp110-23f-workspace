@@ -1,5 +1,5 @@
 """Abstracting Wordle with Functions."""
-___author___ = "730663338"
+__author__ = "730663338"
 
 
 WHITE_BOX: str = "\U00002B1C"
@@ -39,3 +39,18 @@ def input_guess(num: int) -> str:
         word = input(f"That wasn't { num } characters! Try again: ")
     return word
 
+def main() -> None:
+    """Entry point of program and main game loop."""
+    turn = 1
+    secret_word = "codes"
+    while turn < 7:
+        print(f"=== Turn { turn }/6 ===")
+        user_guess = input_guess(5)
+        print(emojified(secret_word, user_guess))
+        if secret_word == user_guess:
+            return print(f"You won in { turn }/6 turns!")
+        turn += 1
+    return print("X/6 - Sorry, try again tomorrow!")
+
+if __name__ == "__main__":
+    main()
