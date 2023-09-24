@@ -7,6 +7,7 @@ GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
 
 def contains_char(str1: str, str2: str) -> bool:
+    """Searches a string for one character."""
     assert len(str2) == 1
     i = 0
     val = False
@@ -20,6 +21,7 @@ def contains_char(str1: str, str2: str) -> bool:
         return False
 
 def emojified(secret: str, guess: str) -> str:
+    """Evaluating what emoji box should be assigned."""
     assert len(secret) == len(guess)
     boxes = ""
     i = 0
@@ -34,6 +36,7 @@ def emojified(secret: str, guess: str) -> str:
     return boxes
 
 def input_guess(num: int) -> str:
+    """Makes sure guessed word is the right amount of characters."""
     word = input(f"Enter a { num } character word: ")
     while len(word) != num:
         word = input(f"That wasn't { num } characters! Try again: ")
