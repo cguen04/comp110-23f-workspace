@@ -23,11 +23,13 @@ def emojified(secret: str, guess: str) -> str:
     assert len(secret) == len(guess)
     boxes = ""
     i = 0
-    while (1 < len(secret)):
+    while (i < len(secret)):
         if secret[i] == guess [i]:
             boxes += GREEN_BOX
         elif contains_char(secret, guess[i]) is True:
             boxes += YELLOW_BOX
         else:
             boxes += WHITE_BOX
+        i += 1
     return boxes
+
