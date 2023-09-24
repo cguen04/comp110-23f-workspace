@@ -33,3 +33,9 @@ def emojified(secret: str, guess: str) -> str:
         i += 1
     return boxes
 
+def input_guess(num: int) -> str:
+    word = input(f"Enter a { num } character word: ")
+    while len(word) != num:
+        word = input(f"That wasn't { num } characters! Try again: ")
+    return word
+
