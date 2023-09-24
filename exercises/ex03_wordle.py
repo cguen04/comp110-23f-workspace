@@ -31,4 +31,3 @@ def emojified(secret: str, guess: str) -> str:
         else:
             boxes += WHITE_BOX
     return boxes
-
