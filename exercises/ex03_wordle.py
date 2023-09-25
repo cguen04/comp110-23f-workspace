@@ -42,7 +42,7 @@ def input_guess(num: int) -> str:
     """Makes sure guessed word is the right amount of characters."""
     word = input(f"Enter a { num } character word: ")
     while len(word) != num:
-        word = input(f"That wasn't { num } characters! Try again: ")
+        word = input(f"That wasn't { num } chars! Try again: ")
     return word
 
 
