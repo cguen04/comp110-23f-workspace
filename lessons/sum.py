@@ -13,7 +13,7 @@ def w_sum(vals: list[float]) -> float:
 
 
 def f_sum(vals: list[float]) -> float:
-    "Gettin a sum using for... in... without range."
+    """Gettin a sum using for... in... without range."""
     sum = 0.0
     for elem in vals:
         sum += elem
@@ -21,9 +21,8 @@ def f_sum(vals: list[float]) -> float:
 
 
 def f_range_sum(vals: list[float]) -> float:
-    "Getting a sum using for... in... with range."
+    """Getting a sum using for... in... with range."""
     sum = 0.0
     for idx in range(0, len(vals)):
         sum += vals[idx]
     return sum
-
