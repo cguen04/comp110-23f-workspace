@@ -1,7 +1,7 @@
 """Drawing a cabin at night with Turtle. The function that draws trees has been broken up into drawing triangles and a rectangle. I used randint to position and rotate the stars randomly."""
 __author__ = "730663338"
 
-from turtle import Turtle, colormode, done
+from turtle import Turtle, done
 from random import randint
 
 
@@ -69,7 +69,7 @@ def draw_triangle(a_turtle: Turtle, x: float, y: float, length: float, color: st
     a_turtle.begin_fill()
     i: int = 0
     a_turtle.left(60)
-    while  i < 3:
+    while i < 3:
         a_turtle.forward(length)
         a_turtle.right(120)
         i += 1
@@ -77,7 +77,7 @@ def draw_triangle(a_turtle: Turtle, x: float, y: float, length: float, color: st
 
 
 def draw_tree(a_turtle: Turtle, x: float, y: float, length: float, width: float, color1: str, color2: str) -> None:
-    """Function that when called will draw a tree. It combines to previous functions"""
+    """Function that when called will draw a tree. It combines to previous functions."""
     draw_uprectangle(a_turtle, x, y, length, width, color1)
     i = 0
     while i < 3:
@@ -99,20 +99,20 @@ def main() -> None:
     i = 0
     xval = -550
     while i < 3:
-         draw_tree(my_turtle, xval, -200, 50, 20, "brown", "dark green")
-         i += 1
-         xval += 130
+        draw_tree(my_turtle, xval, -200, 50, 20, "brown", "dark green")
+        i += 1
+        xval += 130
     draw_rectangle(my_turtle, -150, 0, 300, 200, "brown")
-    draw_triangle(my_turtle,-150, 0, 300, "maroon")
+    draw_triangle(my_turtle, -150, 0, 300, "maroon")
     draw_uprectangle(my_turtle, -30, -200, 75, 60, "maroon")
     draw_uprectangle(my_turtle, -100, -100, 50, 50, "yellow")
     draw_uprectangle(my_turtle, 50, -100, 50, 50, "yellow")
     i = 0
     xval = 280
     while i < 3:
-         draw_tree(my_turtle, xval, -200, 50, 20, "brown", "dark green")
-         i += 1
-         xval += 130
+        draw_tree(my_turtle, xval, -200, 50, 20, "brown", "dark green")
+        i += 1
+        xval += 130
 
 
 main()
