@@ -4,7 +4,7 @@ ___author___ = "730663338"
 
 def zip(keys: list[str], values: list[int]) -> dict[str, int]:
     """Combines two lists into one dictionary."""
-    enddict:[str, int] = dict()
+    enddict = dict()
     if len(keys) != len(values):
         return enddict
     idx = 0
