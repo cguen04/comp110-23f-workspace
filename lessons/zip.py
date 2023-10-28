@@ -10,6 +10,3 @@ def zip(keys: list[str], values: list[int]) -> dict[str, int]:
         enddict[keys[idx]] = values[idx]
         idx += 1
     return enddict
-
-def fun(num) -> int:
-    return num
