@@ -10,4 +10,7 @@ __author__ = "YOUR PID HERE"
 class Simpy:
     values: list[float]
 
-    # TODO: Your constructor and methods will go here.
+    def __init__(self, in_list: list[float]) -> None:
+        self.values = in_list
+        return self
+    
