@@ -12,7 +12,7 @@ that belong to that class.
 from lessons.classes.pizza import Pizza
 
 
-my_pizza: Pizza = Pizza("large", 10, True) # constructor
+my_pizza: Pizza = Pizza("large", 12, True) # constructor
 # access/set/update attribute values
 #my_pizza.size = "large"
 #my_pizza.toppings = 10
@@ -38,6 +38,9 @@ def price(input_pizza: Pizza) -> float:
     if input_pizza.gluten_free:
         cost += 1.00
     return cost
-
+#calling functions
 print(price(my_pizza))
 print(price(sals_pizza))
+
+#calling method
+print(my_pizza.price())
