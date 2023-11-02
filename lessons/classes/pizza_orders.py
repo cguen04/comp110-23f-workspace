@@ -47,4 +47,4 @@ print(my_pizza.price())
 
 my_pizza.add_toppings(3)
 print(my_pizza.price())
-print(my_pizza.toppings())
+print(my_pizza.toppings)
