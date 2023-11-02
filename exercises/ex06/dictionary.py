@@ -21,8 +21,24 @@ def invert(dict1: dict[str, str]) -> dict[str, str]:
 
 
 def favorite_color(colors:dict[str, str]) -> str:
-    colors_list =[]
+    color_dict_vals: dict[str, int] = {}
+    color_list: list[str] = []
+    for name in colors:
+        color_list.append(colors[name])
+    for color in color_list:
+        i = 0
+        counter = 0
+        while i < len(color_list):
+            if color == color_list[i]:
+                counter += 1
+            i += 1
+        color_dict_vals[color] = counter
+    max_color = 0
+    for color in color_dict_vals:
+        if color_dict_vals[color] > max_color:
+            max_color = color_dict_vals[color]
+    for color in color_dict_vals:
+        if max_color == color_dict_vals[color]:
+            return color
 
 
-
-print(invert({"a": "wod", "b": "wod", "c": "world"}))
