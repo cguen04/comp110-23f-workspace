@@ -12,10 +12,11 @@ that belong to that class.
 from lessons.classes.pizza import Pizza
 
 
-my_pizza: Pizza = Pizza() # constructor
-my_pizza.size = "large"
-my_pizza.toppings = 10
-my_pizza.gluten_free = True
+my_pizza: Pizza = Pizza("large", 10, True) # constructor
+# access/set/update attribute values
+#my_pizza.size = "large"
+#my_pizza.toppings = 10
+#my_pizza.gluten_free = True
 
 print("Size: ")
 print(my_pizza.size)

@@ -23,4 +23,6 @@ class Pizza:
         self.size = size_input
         self.toppings = toppings_input
         self.gluten_free = gf_input
+        # returns self
+        
 
