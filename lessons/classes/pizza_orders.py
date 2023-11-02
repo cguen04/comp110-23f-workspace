@@ -27,3 +27,17 @@ print(my_pizza.size)
 # Make sals_pizza; size medium, 5 toppings, not gf
 sals_pizza: Pizza = Pizza("medium", 5, False)
 print(sals_pizza.size)
+
+def price(input_pizza: Pizza) -> float:
+    """Compute the price of a pizza"""
+    if input_pizza.size == "large":
+        cost: float = 6.25
+    else:
+        cost: float = 5.00
+    cost += .75 * input_pizza.toppings
+    if input_pizza.gluten_free:
+        cost += 1.00
+    return cost
+
+print(price(my_pizza))
+print(price(sals_pizza))
