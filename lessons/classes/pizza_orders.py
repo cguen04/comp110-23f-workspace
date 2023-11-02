@@ -47,4 +47,8 @@ print(my_pizza.price())
 
 my_pizza.add_toppings(3)
 print(my_pizza.price())
-print(my_pizza.toppings)
+#print(my_pizza.toppings)
+
+
+my_second_pizza: Pizza = my_pizza.add_toppings_new_order(2)
+print(my_second_pizza.toppings)
