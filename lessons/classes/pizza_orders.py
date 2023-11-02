@@ -21,5 +21,9 @@ my_pizza: Pizza = Pizza("large", 10, True) # constructor
 print("Size: ")
 print(my_pizza.size)
 
-print("my_pizza: ")
-print(my_pizza)
+#print("my_pizza: ")
+#print(my_pizza)
+
+# Make sals_pizza; size medium, 5 toppings, not gf
+sals_pizza: Pizza = Pizza("medium", 5, False)
+print(sals_pizza.size)
