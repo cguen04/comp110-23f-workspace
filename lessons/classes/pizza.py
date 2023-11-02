@@ -35,5 +35,10 @@ class Pizza:
         if self.gluten_free:
             cost += 1.00
         return cost
+    
+    def add_toppings(self, num_toppings: int):
+        """Update an existing pizza order with num_toppings"""
+        self.toppings += num_toppings
+        
 
 

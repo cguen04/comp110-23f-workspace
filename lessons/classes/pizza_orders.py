@@ -44,3 +44,7 @@ print(price(sals_pizza))
 
 #calling method
 print(my_pizza.price())
+
+my_pizza.add_toppings(3)
+print(my_pizza.price())
+print(my_pizza.toppings())
