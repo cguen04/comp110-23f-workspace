@@ -42,3 +42,14 @@ def favorite_color(colors:dict[str, str]) -> str:
             return color
 
 
+def count(list_in: list[str]) -> dict[str, int]:
+    dict_out: dict[str, int] = {}
+    for val in list_in:
+        if val in dict_out:
+            dict_out[val] += 1
+        if val not in dict_out:
+            dict_out[val] = 1
+    return dict_out
+
+def alphabetizer(list_in: list[str]) -> dict[str, list[str]]:
+    
