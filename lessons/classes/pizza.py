@@ -43,7 +43,7 @@ class Pizza:
 
     def add_toppings_new_order(self, num_toppings: int) -> Pizza:
         """Make new pizza order using existing info."""
-        new_pizza: Pizza(self.size, self.toppings + num_toppings, self.gluten_free)
+        new_pizza: Pizza = Pizza(self.size, self.toppings + num_toppings, self.gluten_free)
         return new_pizza
     
 
