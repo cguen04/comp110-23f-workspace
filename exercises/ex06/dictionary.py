@@ -11,9 +11,9 @@ def invert(dict1: dict[str, str]) -> dict[str, str]:
         dict2[dict1[key]] = key
     idx = 1
     i = 1
-    for str in new_keys:
+    for val in new_keys:
         while i < len(new_keys):
-            if str == new_keys[i]:
+            if val == new_keys[i]:
                 raise KeyError("identical keys")
             i += 1
         idx += 1
@@ -21,7 +21,7 @@ def invert(dict1: dict[str, str]) -> dict[str, str]:
     return dict2
 
 
-def favorite_color(colors:dict[str, str]) -> str:
+def favorite_color(colors: dict[str, str]) -> str:
     """Returns the color most often said to be the favorite."""
     color_dict_vals: dict[str, int] = {}
     color_list: list[str] = []
@@ -56,7 +56,7 @@ def count(list_in: list[str]) -> dict[str, int]:
 
 
 def alphabetizer(list_in: list[str]) -> dict[str, list[str]]:
-    """Takes a list of items and returns a dictionary with the items sorted by the first character"""
+    """Takes a list of items and returns a dictionary with the items sorted by the first character."""
     dict_out: dict[str, list[str]] = {}
     for elem in list_in:
         x = ""
