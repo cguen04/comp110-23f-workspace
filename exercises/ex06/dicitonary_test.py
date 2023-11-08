@@ -23,3 +23,19 @@ def test_invert_edge() -> None:
     """Should return {}"""
     assert invert({}) == {}
 
+
+def test_favorite_color_use_1() -> None:
+    """Should return green"""
+    assert favorite_color({"John": "green", "Jimmy": "blue", "Cindy": "green"}) == "green"
+
+
+def test_favorite_color_use_2() -> None:
+    """Should return yellow"""
+    assert favorite_color({"Greg": "orange", "Lew": "orange", "Veronica": "yellow", "Abed": "yellow", "James": "yellow"}) == "yellow"
+
+
+def test_favorite_color_edge() -> None:
+    """SHould return purple"""
+    assert favorite_color({"Ayden": "gREEN", "Anthony": "pUrpLE", "Jackson": "PURPLE"}) == "purple"
+
+    
