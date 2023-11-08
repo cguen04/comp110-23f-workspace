@@ -21,5 +21,5 @@ def test_invert_use_2() -> None:
 
 def test_invert_edge() -> None:
     """Should return {}"""
-    assert invert() == {}
+    assert invert({}) == {}
 
