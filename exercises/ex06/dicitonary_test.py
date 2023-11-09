@@ -65,6 +65,21 @@ def test_alphabetizer_use_2() -> None:
 
 
 def test_alphabetizer_edge() -> None:
-    """Should re"""
+    """Should return {"r": ["Radio", "red", "RADICAL"], "b": ["BLOOM"]}"""
     assert alphabetizer(["Radio", "red", "RADICAL", "BLOOM"]) == {"r": ["Radio", "red", "RADICAL"], "b": ["BLOOM"]}
+
+
+def test_update_attendance_use_1() -> None:
+    """Should return {"Monday": ["John", "Michael"], "Tuesday": ["Carson"]}"""
+    assert update_attendance({"Monday": ["John", "Michael"]}, "Tuesday", "Carson") == {"Monday": ["John", "Michael"], "Tuesday": ["Carson"]}
+
+
+def test_update_attendance_use_2() -> None:
+    """Should return {"Monday": ["John", "Michael"], "Tuesday": ["Carson", "Michael"]}"""
+    assert update_attendance({"Monday": ["John", "Michael"], "Tuesday": ["Carson"]}, "Tuesday", "Michael") == {"Monday": ["John", "Michael"], "Tuesday": ["Carson", "Michael"]}
+
+
+def test_update_attendance_edge() -> None:
+    """Tests how function deals with capitilization. Should return {"Monday": ["John", "Michael", "Tammy"], "Tuesday": ["Carson", "Michael"]}"""
+    assert update_attendance({"Monday": ["John", "Michael"], "Tuesday": ["Carson", "Michael"]}, "monday", "Tammy") == {"Monday": ["John", "Michael", "Tammy"], "Tuesday": ["Carson", "Michael"]}
 
