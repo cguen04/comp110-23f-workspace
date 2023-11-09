@@ -25,7 +25,6 @@ class Point:
         new_point: Point = Point(self.x * factor, self.y * factor)
         return new_point
     
-    
 
 
 
