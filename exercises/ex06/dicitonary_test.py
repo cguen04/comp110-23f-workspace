@@ -35,7 +35,21 @@ def test_favorite_color_use_2() -> None:
 
 
 def test_favorite_color_edge() -> None:
-    """SHould return purple"""
+    """Should return purple. Tests to see how function handles capitalization."""
     assert favorite_color({"Ayden": "gREEN", "Anthony": "pUrpLE", "Jackson": "PURPLE"}) == "purple"
 
-    
+
+def test_count_use_1() -> None:
+    """Should return {"hello": 3, "world": 1}"""
+    assert count(["hello", "hello", "hello", "world"]) == {"hello": 3, "world": 1}
+
+
+def test_count_use_2() -> None:
+    """Should return {"my": 1, "name": 1, "is": 1}"""
+    assert count(["my", "name", "is"]) == {"my": 1, "name": 1, "is": 1}
+
+
+def test_count_edge() -> None:
+    """Should return {}"""
+    assert count([]) == {}
+
