@@ -6,7 +6,7 @@ class Email:
     message: str
     important: bool
 
-    def __init__(self, recipient: str, message_text: str, importance_flag: str):
+    def __init__(self, recipient: str, message_text: str = "", importance_flag: bool = False):
         """Constructor of an email"""
         self.to = recipient
         self.message = message_text
@@ -24,5 +24,8 @@ class Email:
 
 
 email_to_chiara: Email = Email("Chiara", "You're a great TA!", False)
-email_to_chiara * 100
+#email_to_chiara * 100
 print(email_to_chiara)
+
+email_to_lauren: Email = Email("lauren", "Great job!")
+print(email_to_lauren)
