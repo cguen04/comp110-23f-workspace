@@ -15,7 +15,7 @@ class Email:
     def __str__(self) -> str:
         m_string: str = f"To: {self.to} \n"
         m_string += f"Important? {self.important}\n"
-        m_strong += f'"{self.message}"'
+        m_string += f'"{self.message}"'
         return m_string
 
 
