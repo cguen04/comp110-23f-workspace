@@ -56,16 +56,15 @@ def test_count_edge() -> None:
 
 def test_alphabetizer_use_1() -> None:
     """Should return {"b": ["barbell", "balloon"], "c": ["candy", "chocolate"]}"""
-    assert alphabetizer(["barbell", "candy", "ballon", "chocolate"]) ==  {"b": ["barbell", "balloon"], "c": ["candy", "chocolate"]}
+    assert alphabetizer(["barbell", "candy", "balloon", "chocolate"]) ==  {"b": ["barbell", "balloon"], "c": ["candy", "chocolate"]}
 
 
 def test_alphabetizer_use_2() -> None:
     """Should return {"z": ["zebra"], "a": ["apple"], "d": ["dandelion"], "q": ["queen"]}"""
-    assert alphabetizer["zebra", "apple", "dandelion", "queen"] == {"z": ["zebra"], "a": ["apple"], "d": ["dandelion"], "q": ["queen"]}
+    assert alphabetizer(["zebra", "apple", "dandelion", "queen"]) == {"z": ["zebra"], "a": ["apple"], "d": ["dandelion"], "q": ["queen"]}
 
 
 def test_alphabetizer_edge() -> None:
     """Should re"""
     assert alphabetizer(["Radio", "red", "RADICAL", "BLOOM"]) == {"r": ["Radio", "red", "RADICAL"], "b": ["BLOOM"]}
 
-    
