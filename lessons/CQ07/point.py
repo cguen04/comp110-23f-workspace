@@ -1,5 +1,5 @@
-from __future__ import annotations
 """Making Point class."""
+from __future__ import annotations
 __author__ = "730663338"
 
 
@@ -19,6 +19,7 @@ class Point:
         """Mutates a Point."""
         self.x *= factor
         self.y *= factor
+        return self
     
     def scale(self, factor: int) -> Point:
         """Creates a new Point."""
@@ -30,14 +31,12 @@ class Point:
         out = f"x: {self.x}; y: {self.y}"
         return out
     
-    def __mul__(self, factor: int|float) -> Point:
+    def __mul__(self, factor: int | float) -> Point:
         """Making a new Point with multiplication."""
         point_out: Point = Point(self.x * factor, self.y * factor)
         return point_out
     
-    def __add__(self, addend: int|float) -> Point:
+    def __add__(self, addend: int | float) -> Point:
         """Making a new Point with add."""
         point_out: Point = Point(self.x + addend, self.y + addend)
         return point_out
-    
-
