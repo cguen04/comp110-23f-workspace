@@ -2,11 +2,11 @@
 
 class Email:
 
-    to: str
+    to: str | int
     message: str
     important: bool
 
-    def __init__(self, recipient: str = "Bear", message_text: str = "", importance_flag: bool = False):
+    def __init__(self, recipient: str | int, message_text: str = "", importance_flag: bool = False):
         """Constructor of an email"""
         self.to = recipient
         self.message = message_text
@@ -31,5 +31,6 @@ email_to_lauren: Email = Email("lauren", "Great job!")
 print(email_to_lauren)
 
 email_to_lauren.message = "You're the best"
-email_to_bear: Email = Email()
-print(email_to_bear)
+#email_to_bear: Email = Email()
+#print(email_to_bear)
+
