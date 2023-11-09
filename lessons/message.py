@@ -17,8 +17,12 @@ class Email:
         m_string += f"Important? {self.important}\n"
         m_string += f'"{self.message}"'
         return m_string
+    
+    def __mul__(self, factor: int):
+        self.message *= factor
 
 
 
 email_to_chiara: Email = Email("Chiara", "You're a great TA!", False)
+email_to_chiara * 100
 print(email_to_chiara)
