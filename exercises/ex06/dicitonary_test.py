@@ -1,7 +1,7 @@
 """Testing dict funcitons."""
 __author__ = "730663338"
 
-import pytest
+
 from exercises.ex06.dictionary import invert
 from exercises.ex06.dictionary import favorite_color
 from exercises.ex06.dictionary import count
@@ -82,4 +82,3 @@ def test_update_attendance_use_2() -> None:
 def test_update_attendance_edge() -> None:
     """Should return {"Monday": ["John", "Michael", "John"], "Tuesday": ["Carson", "Michael"]}."""
     assert update_attendance({"Monday": ["John", "Michael"], "Tuesday": ["Carson", "Michael"]}, "Monday", "John") == {"Monday": ["John", "Michael", "Tammy"], "Tuesday": ["Carson", "Michael"]}
-
