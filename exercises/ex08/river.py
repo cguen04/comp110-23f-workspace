@@ -54,7 +54,7 @@ class River:
         return None
         
     def repopulate_fish(self):
-        x = 4(len(self.fish)//2)
+        x = 4((len(self.fish))//2)
         while x > 0:
             self.fish.append(Fish)
             x -=1
