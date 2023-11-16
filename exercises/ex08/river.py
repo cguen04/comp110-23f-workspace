@@ -1,5 +1,7 @@
 """File to define River class"""
 
+__author__ = "730663338"
+
 from exercises.ex08.fish import Fish
 from exercises.ex08.bear import Bear
 
@@ -35,7 +37,7 @@ class River:
     
     def remove_fish(self, amount: int):
         x = amount
-        while x >=0:
+        while x > 0:
             self.fish.pop(0)
             x -= 1
         return None
