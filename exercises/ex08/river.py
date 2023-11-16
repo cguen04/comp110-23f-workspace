@@ -77,7 +77,7 @@ class River:
         self.day += 1
         # Simulate one day for all Bears
         for bear in self.bears:
-            bear.one_day(self)
+            bear.one_day()
         # Simulate one day for all Fish
         for fish in self.fish:
             fish.one_day()
