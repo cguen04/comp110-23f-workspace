@@ -1,12 +1,13 @@
 """File to define Bear class."""
 
+
 class Bear:
     """Bear class."""
 
     age: int
     hunger_score: int
     
-    def __init__(self, begin_age = 0, begin_hunger = 0):
+    def __init__(self, begin_age=0, begin_hunger=0):
         """Bear constructor."""
         self.age = begin_age
         self.hunger_score = begin_hunger
