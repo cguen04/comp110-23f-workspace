@@ -32,6 +32,13 @@ class River:
         self.bears = new_bear
         self.fish = new_fish 
         return None
+    
+    def remove_fish(self, amount: int):
+        x = amount
+        while x >=0:
+            self.fish.pop(0)
+            x -= 1
+        return None
 
     def bears_eating(self):
         return None
