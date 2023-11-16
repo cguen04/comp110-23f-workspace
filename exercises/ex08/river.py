@@ -49,7 +49,7 @@ class River:
     
     def check_hunger(self):
         for bear in self.bears:
-            if bear.hunger_score() < 0:
+            if bear.hunger_score < 0:
                 self.bears.pop()
         return None
         
