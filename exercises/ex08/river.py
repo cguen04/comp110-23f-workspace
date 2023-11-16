@@ -61,7 +61,7 @@ class River:
         return None
     
     def repopulate_bears(self):
-        x = len(self.bears)//2
+        x = (len(self.bears))//2
         while x > 0:
             self.bears.append(Bear)
             x -= 1
