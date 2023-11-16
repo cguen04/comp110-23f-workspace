@@ -24,11 +24,11 @@ class River:
         new_bear: list[Bear] = self.bears
         for bear in new_bear:
             if bear.age > 5:
-                bear.pop()
+                new_bear.pop()
         new_fish: list[Fish] = self.fish
         for fish in new_fish:
             if fish.age > 3:
-                fish.pop()
+                new_fish.pop()
         self.bears = new_bear
         self.fish = new_fish 
         return None
