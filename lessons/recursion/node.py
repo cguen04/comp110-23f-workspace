@@ -28,8 +28,8 @@ class Node:
     def tail(self):
         if self.next is None:
             return None
-        else:
-            return __str__(self.next)
+        while self.next is not None:
+            return f"{self.next} -> {self.next}"
 
     def last(self):
         return None
