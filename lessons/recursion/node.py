@@ -22,10 +22,9 @@ class Node:
         else:
             return f"{self.data} -> {self.next}"
         
-    def head(self):
-        print(self.data)
-        return None
-    
+    def head(self) -> int:
+        return print(self.data)
+
     def tail(self):
         return None
     
