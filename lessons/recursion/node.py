@@ -35,4 +35,4 @@ class Node:
         if self.next == None:
             return self.data
         x: list = [self.data, self.next,]
-        return x[len(x)]
+        return x[len(x) - 2]
