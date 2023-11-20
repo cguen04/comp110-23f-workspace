@@ -28,9 +28,10 @@ class Node:
     def tail(self) -> Node | None:
         if self.next is None:
             return None
-        while self.next != None:
-            x = f"{self.next} -> {self.next}"
-        return x
+        else:
+            return print(self.next)
+
 
     def last(self):
+
         return None
