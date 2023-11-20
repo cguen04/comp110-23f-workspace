@@ -29,7 +29,7 @@ class Node:
         if self.next is None:
             return None
         else:
-            return f"{self.next} -> {self.next.next}"
+            return f"{self.next} -> {self.next}"
     
     def last(self):
         return None
