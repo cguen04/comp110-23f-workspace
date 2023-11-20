@@ -25,11 +25,12 @@ class Node:
     def head(self) -> int:
         return self.data
 
-    def tail(self):
+    def tail(self) -> Node | None:
         if self.next is None:
             return None
-        while self.next is not None:
-            return f"{self.next} -> {self.next}"
+        while self.next != None:
+            x = f"{self.next} -> {self.next}"
+        return x
 
     def last(self):
         return None
