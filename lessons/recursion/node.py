@@ -32,5 +32,7 @@ class Node:
             return print(self.next)
 
     def last(self) -> int:
-        if self.next is None:
-            return self.data
+        x = self.data
+        while self.next is not None:
+            x = self.next.data
+        return x
