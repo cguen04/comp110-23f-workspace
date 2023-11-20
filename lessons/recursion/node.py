@@ -29,7 +29,7 @@ class Node:
         if self.next is None:
             return None
         else:
-            return print(self.next)
+            return str(self.next)
 
     def last(self) -> int:
         x = self.data
