@@ -32,7 +32,7 @@ class Node:
             return str(self.next)
 
     def last(self) -> int:
-        x = self.data
-        while x.next != None:
-            x = self.next.data
-        return x
+        if self.next == None:
+            return self.data
+        x: list = [self.data, self.next,]
+        return x[len(x) - 2]
