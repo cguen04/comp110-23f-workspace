@@ -26,7 +26,10 @@ class Node:
         return self.data
 
     def tail(self):
-        return None
+        if self.next is None:
+            return None
+        else:
+            return f"{self.next} -> {self.next.next}"
     
     def last(self):
         return None
