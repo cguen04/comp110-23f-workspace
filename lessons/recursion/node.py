@@ -23,6 +23,7 @@ class Node:
             return f"{self.data} -> {self.next}"
         
     def head(self):
+        print(self.data)
         return None
     
     def tail(self):
