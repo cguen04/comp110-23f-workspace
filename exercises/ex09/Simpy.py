@@ -54,7 +54,7 @@ class Simpy:
             new_simpy.values = list_right
         else:
             assert len(self.values) == len(right_hand.values)
-            for num in range(len(self)):
+            for num in range(len(self.values)):
                 list_right.append(self.values[num] + right_hand.values[num])
             new_simpy.values = list_right
         return new_simpy
