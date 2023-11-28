@@ -60,5 +60,21 @@ class Simpy:
         return new_simpy
     
 
+    def __pow__(self, right_hand: float | Simpy) -> Simpy:
+        new_simpy: Simpy = Simpy([])
+        list_right: list[float] = []
+        if type(right_hand) is float:
+            for num in range(len(self.values)):
+                list_right.append(self.values[num] ** right_hand)
+            new_simpy.values = list_right
+        else:
+            assert len(self.values) == len(right_hand.values)
+            for num in range(len(self.values)):
+                list_right.append(self.values[num] ** right_hand.values[num])
+            new_simpy.values = list_right
+        return new_simpy
+
+
+
 
 
