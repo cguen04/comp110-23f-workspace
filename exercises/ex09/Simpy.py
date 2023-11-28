@@ -40,3 +40,7 @@ class Simpy:
         self.values = new_list
         return None
     
+
+    def sum(self) -> float:
+        return sum(self.values)
+    
