@@ -49,13 +49,13 @@ class Simpy:
         new_simpy: Simpy = Simpy([])
         list_right: list[float] = []
         if type(right_hand) is float:
-            for num in range(len(self)):
+            for num in range(len(self.values)):
                 list_right.append(self.values[num] + right_hand)
             new_simpy.values = list_right
         elif type(right_hand) is Simpy:
-            assert len(self) == len(right_hand)
+            assert len(self.values) == len(right_hand.values)
             for num in range(len(self)):
-                list_right.append(self.values[num] + right_hand[num])
+                list_right.append(self.values[num] + right_hand.values[num])
             new_simpy.values = list_right
         return new_simpy
     
