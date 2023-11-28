@@ -26,7 +26,7 @@ class Simpy:
         self.values = new_list
         return None
     
-    def arange(self, start: float, stop: float, step: float = 0) -> None:
+    def arange(self, start: float, stop: float, step: float = 1.0) -> None:
         new_list = []
         assert step != 0.0
         while start < stop:
