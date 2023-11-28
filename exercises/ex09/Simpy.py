@@ -12,5 +12,5 @@ class Simpy:
 
     def __init__(self, in_list: list[float]) -> None:
         self.values = in_list
-        return self
+        return None
     
