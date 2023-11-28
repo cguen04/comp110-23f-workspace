@@ -52,7 +52,7 @@ class Simpy:
             for num in range(len(self.values)):
                 list_right.append(self.values[num] + right_hand)
             new_simpy.values = list_right
-        elif type(right_hand) is Simpy:
+        else:
             assert len(self.values) == len(right_hand.values)
             for num in range(len(self)):
                 list_right.append(self.values[num] + right_hand.values[num])
