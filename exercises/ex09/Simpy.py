@@ -16,4 +16,14 @@ class Simpy:
 
 
     def __str__(self) -> str:
-        return f"Simpy({self.values})"    
+        return f"Simpy({self.values})"
+
+
+    def fill(self, float: float, int: int) -> None:
+        new_list = []
+        for num in range(int):
+            new_list.append(float)
+        self.values = new_list
+        return None
+    
+    
