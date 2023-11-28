@@ -13,4 +13,7 @@ class Simpy:
     def __init__(self, in_list: list[float]) -> None:
         self.values = in_list
         return None
-    
+
+
+    def __str__(self) -> str:
+        return f"Simpy({self.values})"    
