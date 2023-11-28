@@ -29,10 +29,14 @@ class Simpy:
     def arange(self, start: float, stop: float, step: float = 1.0) -> None:
         new_list = []
         assert step != 0.0
-        while start < stop:
-            new_list.append(start)
-            start += step
+        if step > 0:
+            while start < stop:
+                new_list.append(start)
+                start += step
+        else:
+            while start > stop:
+                new_list.append(start)
+                start += step
         self.values = new_list
         return None
-    
     
